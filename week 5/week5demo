@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="M Villanueva">
+    <meta name="description" content="W1 Demo">
+    <title>W1 | Demo</title>
+</head>
+<body>
+
+    <h1> Basic Form demo </h1>
+
+    <h2> Form w/o Table (WRONG) </h2>
+    <form>
+
+        <!--First name-->
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="first-name-input">
+
+        <!-- labels are used to matchup with input elements 
+
+        for attribute value connects label elements with input elements
+    
+        name attribute value connects input element with label element-->
+        <br>
+        <!--lastname-->
+        <label for="lastName"> Last Name:</label>
+        <input type="" name="lastName" id="last-name-input">
+        <br>
+
+
+        <!--email-->
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email-input">
+
+
+        <!--submit button - required for any form with > 1 input field-->
+
+        <input type="submit"value='SUBMIT >:D'>
+    </form>
+
+
+    <h2> Form with a table because this is how it should be you plebian </h2>
+    <!--using tables to align and space data for ease of use-->
+
+    <form>
+        <table>
+
+            <body>
+                <tr>
+                    <td>
+                        <label for="firstName">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="firstName" id="first-name-2-input">
+                    </td>
+                </tr>    
+
+                <tr>
+                    <td>
+                        <label for="lastName">Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lastName" id="last-name-2-input">
+                    </td>
+                </tr>
+                <tr>
+                    <!--dropdown list// non-text input-->
+                    <td>
+                        <label for="faveColor">Pick your Favorite Color:</label>                 
+                    </td>
+                    <td>
+                        <select name="faveColor"><!--creating the drop down-->
+                            <option value="red">RED </option>
+                            <option value="green">GREEN</option>
+                            <option value="blue">BLUE</option>
+                                                
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="study">Program of Study</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="study" value="SE"> Software Engineering <br>
+                        <input type="radio" name="study" value="CYB"> CyberSecurity <br>
+                        <input type="radio" name="study" value="WB"> Web Developement <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">Date:</label>
+                    </td>
+                    <td>
+                        <input type="date" name="date">
+                    </td>
+                </tr>
+                <!--checkboxes allow for multiple responses-->
+                <tr>
+                    <td>
+                        <lable for="vehicle">Select Your Vehicle: </lable>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="vehicle1" value="car">CAR <br>
+                        <input type="checkbox" name="vehicle2" value="Horse">SPIRIT OF THE PLAINS <br>
+                        <input type="checkbox" name="vehicle3" value="Horse and Carriage">HORSE AND CARRIAGE <br>
+                        <input type="checkbox" name="vehicle4" value="Vespa">VESPA <br>
+                        <input type="checkbox" name="vehicle5" value="Heelies">HEELIES <br>
+                        <input type="checkbox" name="vehicle6" value="Detroit">THE ENTIRE CITY OF DETROIT <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email2">Email:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="email2" id="email-2-input" maxlength="5"
+                        placeholder='email@email.neit'>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit"value='SUBMIT >:D'>
+                    </td>
+                    <td></td>
+                </tr>
+
+            </body>
+        
+        </table>
+    </form>
+
+</body>
