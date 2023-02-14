@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta htp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+
+    <meta name="author" content="M Villanueva">
+    <meta name="description" content="W6 Demo - JS Intro">
+
+    <title> W6 | Intro to Javascript  </title>
+</head>
+<body>
+    <!--we should have some sort of HTML in the file-->
+    <h1> Week 6 Intro Demo | Javascript</h1>
+
+    <!--IN DOCUMENT JAVASCRIPT-->
+
+    <script>
+        //Whenever you write within script tags you need to write with Javascript
+
+        //creating (declaring) a variable -- keyword var
+
+        var num1 = 10
+        var num2 = 7
+
+        //cannot use num1 or num2 until they have value assigned (=)
+        //variable assignment --> DEFINITION
+
+        var sum = num1 + num2
+
+        // test our value in the console - displaying variable values
+        console.log(sum) //used primarily for testing 
+
+        //alert() allows for a pop-up in the browser page to display info to the user
+        //alert() ---> print() in Python
+        //alert(sum) //just displays stored value
+        //alert("the sum is: ", sum) //displays string then stored value
+        //alert(`the sum is: ${sum}`) //literal strings :D
+
+        // escape sequences also work in Javascript \n (inside of strings!)
+        console.log(`the sum of \n ${num1}\n+\n${num2}\n=${sum}`)
+        //alert(`The sum is: \n${sum}!`)
+
+        //prompts user for value: waits for ENTER key
+        //prompt is the same as input from Python
+        //prompt(`Enter your name NOW: `)
+
+        //Use the value provided by the user by ASSIGNING TO A VARIABLE
+        var name = prompt(`Enter your name NOW: `)
+
+        console.log(`Name entered: ${name}`)
+
+        //all data returned from prompt() is a STRING; we must convert it to a Number() if we want to do math (NVM LOL Feb 2023 update no longer need to cast 4 numbers)
+        var num = prompt(`Enter a number: `)
+        var square = num * num
+
+        //console.log((Number(square))
+        console.log(square.toFixed(2))
+        
+
+
+
+
+    </script>
+
+</body>
+</html>
