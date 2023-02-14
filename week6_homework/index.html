@@ -13,22 +13,28 @@
 <body>
     <h1> This is week 6 homework.. or bullying. I guess it depends on how much you get paid honestly </h1>
     <script>
-        alert(`Hey there, looking' to see what that there income is lookin like? Well certainly hope you didn't think Uncle Sam wouldn't go dippin' his decrepit lil fingies in your wallet c: \n\n\n PAY UP \n`)
+        alert(`Hey there, looking' to see what that there income is lookin like? Well certainly hope you didn't think Uncle Sam wouldn't go dippin' his decrepit lil fingies in your wallet c: \n\n\n TIME TO PAY UP \n`)
+        
         var rate = prompt(`Please enter your hourly rate here: `)
+        
         var hoursWorked = prompt(`Now please enter your hours worked: `)
+        
         var UncleSam = (.2)
 
         grossPay = rate * hoursWorked
         netPay = grossPay * .8
         StickyFingersTax = grossPay * UncleSam
 
-        console.log(`Net Pay: ${netPay.toFixed(2)}`)
-        console.log(`Gross Pay: ${grossPay.toFixed(2)}`)
-        console.log(`Uncle Sammies sticky fingies tax: ${StickyFingersTax.toFixed(2)}`)
-        alert(`Your net earnings are: ${netPay} \n\n Your gross earnings are: ${grossPay} \n\n Your patriotic and necessary contribution to Uncle Sams pocke- I MEAN COUNTRY.. \n\n\n Country..is uhh what I meant..${StickyFingersTax}`)
+        console.log(`Gross Pay (the stuff you wish you got to take home): ${grossPay.toFixed(2)}`)
 
-
+        console.log(`Net Pay (The stuff you actually take home): ${netPay.toFixed(2)}`)
+        
+        console.log(`Your patriotic and necessary contribution to Uncle Sams pocke- I MEAN COUNTRY.. \n...\n Country..is uhh\n...\n is what I meant\n...\n...\n it's: ${StickyFingersTax}`)
+        alert(`Your net earnings are: ${netPay} \n\n Your gross earnings are: ${grossPay} \n\n Uncle Sammies sticky fingies tax: ${StickyFingersTax.toFixed(2)}`)
+        
 
 
 
     </script>
+
+    <!---that's all folks-->
