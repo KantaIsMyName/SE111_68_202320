@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Villanueva">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <h1>Week 5 | My big fat Filipino birthday party</h1>
+</head>
+<body>
+    <form method="get" action="confirm.html">
+        <table>
+            <thead>
+                <tr>
+                    <td>Halimbawa~!</td>
+                    <td>Anyo mga patlang~!</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Parent/Guardians name: 
+                    </td>
+                    <td>
+                        
+                        <label for="Parent/Guardians name: "></label>
+                        <input type="text" name="gfirst" id="g-first" placeholder="Type first name here.." required
+                        maxlength="20" >
+                        <br>
+                    
+                        <input type="text" name="glast" id="g-last" placeholder="Type Last name here.." required maxlength="20">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>Childs Chosen name: </td>
+                    <td>
+                        <label for="Childs first Name: "></label>
+                        <input type="text" name="cfirst" id="c-first" placeholder="Childs first name here.." required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Child's Heliocentric Orbit Number (age)
+                    </td>
+                    <td>
+                        <label for="Childs Age: "></label>
+                        <input type="number" name="age" value="1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Petsa at Oras</h2>
+                    </td>
+                    <td>
+                        Please let us know what date works for you! <br>
+                        As well as what time we should start! <br>
+                        And finally, how many you'll be bringing!
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date: 
+                    </td>
+                    <td>
+                        <label for="Date"></label>
+                        <input type="date" name="date" required>
+                        <br>Please click on the little kalendaryo!
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Time:
+                    </td>
+                    <td>
+                        <label for="time"></label>
+                        <input type="time" name="time" required>
+                        <br>Please click on the little orasan!
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Number of guests: 
+                    </td>
+                    <td>
+                            <label for="guests"></label>
+                            <input type="number" name="guests" value="1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>pagkain at Inumin</h2>
+                    </td>
+                    <td>
+                        Please let us know what drinks you would like!<br>
+                        Also what size you would like your drink(s)<br>
+                        And of course your preffered flavor of cake!<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Drinks~!: 
+                    </td>
+                    <td>
+                        <label for="drinks" name="drinks"></label>
+                        <input type="checkbox"  name="drink1" checked="true" value="Buko Juice"><label for="drink1">Buko Juice</label><br>
+                        <input type="checkbox"  name="drink2" value="Halo-Halo"><label for="drink2">Halo-Halo</label><br>
+                        <input type="checkbox"  name="drink3" value="Mais Con Hielo"><label for="drink3">Mais Con Hielo</label><br>
+                        <input type="checkbox"  name="drink4" value="Sago't Gulaman"><label for="drink4">Sago't Gulaman</label><br>
+                        <input type="checkbox"  name="drink5" value="Mango Milk"><label for="drink5">Mango Milk</label><br>
+                        <input type="checkbox"  name="drink6" value="Kapeng Barako"><label for="drink6">Kapeng Barako</label><br>
+                        <input type="checkbox"  name="drink7" value="Buko Pandan"><label for="drink7">Buko Pandan</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Size:
+                    </td>
+                    <td>
+                        <label for="Size" name="drinkSize"></label>
+                        <input type="radio" name="size" id="small" value="maliit / small"><label for="small"> Maliit / Small </label><br>
+                        <input type="radio" name="size" id="medium" value="daluyan / medium"><label for="medium"> Daluyan / Medium</label><br>
+                        <input type="radio" name="size" id="large" value="Malaki / large"><label for="large"> Malaki / Large </label><br>
+                        <input type="radio" name="size" id="coconut" value="sa isang niyog / in a coconut :)"><label for="coconut"> Sa Isang Niyog / In a coconut c:</label><br>
+                        <input type="radio" name="size" id="floor" value="sa sahig!"><label for="floor"> Sa Sahig! / on the floor :c </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Cake!:
+                    </td>
+                    <td>
+                        <select for="cake" name="cakeflavor" required>
+                            <option name="cakeflavor" value="Tsokolate"> Chocolate / tsokolate </option>
+                            <option name="cakeflavor" value="Mangga"> Mango / mangga </option>
+                            <option name="cakeflavor" value="Ube"> Ube~! </option>
+                            <option name="cakeflavor" value="Banilya"> Vanila / banilya </option>
+                            <option name="cakeflavor" value="Strawberry"> Strawberry! </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2> Palamuti~!</h2>
+                    </td>
+                    <td>
+                        We'd love your help in picking the decorations! <br>
+                        First off what's your favorite color? <br>
+                        Secondly, whats your favorite anime? <br>
+                        Finally if you have any reccomendations or comments, add them below!
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Color Scheme: 
+                    </td>
+                    <td>
+                        <label for="colorscheme" name="colorScheme"></label>
+                        <input type="color" name="colors" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Favorite Anime?:
+                    </td>
+                    <td>
+                        <select required for="favoriteanime" name="favanime">
+                            <option name="favanime" value="Yu-Yu Hakusho"> Yu-Yu Hakusho </option><br>
+                            <option name="favanime" value="Cowboy Bebop"> Cowboy Bebop </option><br>
+                            <option name="favanime" value="Samurai Champloo"> Samurai Champloo </option><br>
+                            <option name="favanime" value="Soul Eater"> Soul Eater </option><br>
+                            <option name="favanime" value="Angel Beats"> Angel Beats </option><br>
+                            <option name="favanime" value="Naruto"> Naruto </option><br>
+                            <option name="favanime" value="One Piece"> One Piece </option><br>
+                            <option name="favanime" value="Dragon Ball Z Kai"> Dragon Ball Z Kai </option><br>
+                            <option name="favanime" value="Parasyte"> Parasyte </option><br>
+                            <option name="favanime" value="Tower Of God"> Tower of God </option><br>
+                            <option name="favanime" value="Darwins Game"> Darwins Game </option><br>
+                            <option name="favanime" value="That Time I got Reincarnated as a Slime"> That Time I got Reincarnated as a Slime </option><br>
+                            <option name="favanime" value="Goblin Slayer"> Goblin Slayer </option><br>
+                            <option name="favanime" value="Demon Slayer"> Demon Slayer </option><br>
+                            <option name="favanime" value="My Hero Academia"> My Hero Academia </option><br>                                <option> Great Pretender </option><br>
+                            <option name="favanime" value="Bungo Stray Dogs"> Bungo Stray Dogs </option><br>
+                            <option name="favanime" value="Junji Ito Maniac: Japanese Tales of the Macabre"> Junji Ito Maniac: Japanese Tales of the Macabre </option><br>
+                            <option name="favanime" value="Black Clover"> Black Clover </option><br>
+                            <option name="favanime" value="The World Ends with You 'The Animation'"> The World Ends with You 'The Animation' </option><br>
+                            <option name="favanime" value="Noragami"> Noragami </option><br>
+                            <option name="favanime" value="One Punch Man"> One Punch Man </option><br>
+                            <option name="favanime" value="Fairy Tail"> Fairy Tail </option><br>
+                            <option name="favanime" value="Haikyu!!! To The Top"> Haikyu!!! To The Top </option><br>
+                            <option name="favanime" value="Summertime Rendering"> Summertime Rendering </option><br>
+                            <option name="favanime" value="Spy x Family"> Spy x Family </option><br>
+                            <option name="favanime" value="Black Lagoon"> Black Lagoon </option><br>
+                            <option name="favanime" value="Banana Fish"> Banana Fish </option><br>
+                            <option name="favanime" value="Dororo"> Dororo </option><br>
+                            <option name="favanime" value="To Your Eternity"> To Your Eternity </option><br>
+                            <option name="favanime" value="God of Highschool"> God of Highschool </option><br>
+                            <option name="favanime" value="Chainsawman"> Chainsawman </option><br>
+                            <option name="favanime" value="Bluelock"> Bluelock </option><br>
+                            <option name="favanime" value="Violet Evergarden"> Violet Evergarden </option><br>
+                            <option name="favanime" value="Neon Genesis Evangelion"> Neon Genesis Evangelion </option><br>
+                            <option name="favanime" value="Golden Kamuy"> Golden Kamuy </option><br>
+                            <option name="favanime" value="Jujutsu Kaisen"> Jujutsu Kaisen </option><br>
+                            <option name="favanime" value="Vinland Saga"> Vinland Saga </option><br>
+                            <option name="favanime" value="Berserk"> Berserk </option><br>
+                            <option name="favanime" value="Monogatari"> Monogatari </option><br>
+                            <option name="favanime" value="Bakemonogatari"> Bakemonogatari </option><br>
+                            <option name="favanime" value="Magi: The Adventures of Sinbad"> Magi: The Adventures of Sinbad </option><br>
+                            <option name="favanime" value="Beastars"> Beastars </option><br>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Additional Comments?:
+                    </td>
+                    <td>
+                        <textarea name="comments" placeholder="Please add any additional comments here!"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         
+                    </td>
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+
+
+
+
+            </tbody>
+
+
+
+
+
+        </table>
+    </form>
+</body>
+</html>
