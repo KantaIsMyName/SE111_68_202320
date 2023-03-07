@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week 2 Files</title>
+<style type="text/css">
+	.border{border:1px solid black;
+	
+			margin-bottom:10px;
+            
+            min-height:20px;}
+</style>
+</head>
+<html>
+<body>
+
+	<script type="text/javascript">
+		//Use this Array of objects to complete the assignment.
+		var people =[
+			{first:"Professor",
+			last:"Quirrel",
+			credit:`The original nightmare fuel curtousy of J.K. Rowling before her untimely social downfall. Also is anyone gonna talk about how the first villain of the story she put in a turban? No? Just me? Aight ok then..` },
+			
+			{first:"Dumbledore",
+			last:"But specifically from the Fourth movie where he asks harry if put his name in the goblet of fire ",
+			credit: `Dumbledore in the movie: HARRY DID YOU PUT YOUR NAME IN THE GOBLET OF FIRE *Choke slams harry*` },
+			
+			{first:"Rubber",
+			last:"Tire",
+			credit:`From hit underground movie "Rubber" this sentient mass murdering tire's killing spree starts abruptly and ends with a bang. Guess you could say this tire.. was on a roll`  },
+			
+			{first:"The",
+			last:"Flubber",
+			credit:`From disney classic "Flubber" this green gelatenous glob is a man made horror that you CAN comprehend` },
+			
+			{first:"Godzilla",
+			last:"King of The Monsters",
+			credit:` Ol' Godzilla was stomping around- Tokyo City like a big playground when suddenly batman burst from the shade and hit Godzilla with a bat grenade. Godzilla got pissed and began to attack but didn't expect to get blocked by Shaq...`},
+			
+			{first:"Buzz",
+			last:"Lightyear",
+			credit:` From hit Disney movie "Toy Story", and its sequels, this space-faring nomad solves punches first and asks questions while punching` },
+			
+			{first:"Marion",
+			last:"Cobretti",
+			credit:`I don't know G.I. Joe all that well but I really doubt you can have a threatening villian named MARION` }
+		]
+		
+		console.log(people[0])
+				console.log(people[0].first)
+
+				var body = document.querySelector (`body`)
+				console.log(body)
+				console.dir(body)
+
+				//body.innerHTML += <div> <p> ${people[0].first} is first </div> </p>
+
+				for(let i = 0; i < people.length; i++)
+				{
+					var tempDiv = document.createElement(`div`)
+					
+					tempDiv.setAttribute(`id`, `${i}`)
+
+					tempDiv.setAttribute(`class`, `border`)
+
+					for(key in people[i])
+					{                
+									
+						
+						var p = document.createElement(`p`)
+
+						var text = document.createTextNode(people[i][key])
+
+
+
+						p.appendChild(text) 
+						tempDiv.appendChild(p)
+
+
+					}
+
+					body.appendChild(tempDiv)
+				}
+
+	</script>
+</body>
+</html>
