@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 8 | Homework Assignment</title>
+
+	<style>
+		.style {
+        
+			border:1px solid rgb(89, 228, 233);
+		
+			margin-bottom:10px;
+		
+			min-height:20px;
+			}
+	</style>
 </head>
 <body>
 
@@ -15,11 +26,11 @@
 		<table>
 			<tr>
 				<td><label for="first">First Name</label></td>
-				<td><input id="first" type="text" name="first" placeholder="Ivan"></td>
+				<td><input id="first" type="text" name="first" placeholder="Celica"></td>
 			</tr>
 			<tr>
 				<td><label for="last">Last Name</label></td>
-				<td><input id="last" type="text" name="last" placeholder="Drago"></td>
+				<td><input id="last" type="text" name="last" placeholder="Argonaut"></td>
 			</tr>
 			<tr>
 				<td></td>
@@ -61,16 +72,21 @@
 
 		function calcAndDisplay(e)
 		{
-			//Create an object called person.
-			//Add the following properties:
-			    //1. first: will be a string that uses the first Input's value
-				//2. last: will be a string that uses the last Input's value
+		var people =[
 
-            var person = {
+			{first:"Daenerys",
+			last:"Targaryen",
+			credit:"Queen of Meereen Khaleesi of the Great Grass Sea Mother of Dragons The Unburnt Breaker of Chains Television: Queen of the Andals and the First Men Protector of the Seven Kingdoms Lady of Dragonstone"},
 
+			{first:"Cersei",
+			last:"Lannister",
+			credit:"Protector of the Realm Lady Paramount of the Westerlands Lady of Casterly Rock Light of the West Queen Dowager Queen Regent Television: Queen of the Andals and the First Men" },
 
+			{first:"Yara",
+			last:"Greyjoy",
+			credit:"Queen of the Iron Islands and Lady Reaper of Pyke" }
 
-            }//end of person object
+				]
 
 
 
